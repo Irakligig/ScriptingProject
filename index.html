@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MidtermProject</title>
   </head>
-  <body></body>
+  <body>
+    <form id="groupform">
+      <label>
+        First name
+        <input type="text" name="firstname" placeholder="First Name" required />
+      </label>
+
+      <label>
+        Last name
+        <input type="text" name="lastname" placeholder="Last Name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="text" name="firstname" placeholder="Email" required />
+      </label>
+
+      <label>
+        Password
+        <input type="text" name="firstname" placeholder="Password" required />
+      </label>
+
+      <label
+        >Team size
+        <select name="teamsize" id="team-size">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Technologies</legend>
+        <label><input type="checkbox" name="technologie" />Html</label>
+        <label><input type="checkbox" name="technologie" />Css</label>
+        <label><input type="checkbox" name="technologie" />Javascript</label>
+        <label><input type="checkbox" name="technologie" />ReactJs</label>
+        <label><input type="checkbox" name="technologie" />Figma</label>
+        <label><input type="checkbox" name="technologie" />Github</label>
+      </fieldset>
+
+      <p class="error" id="techError"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
