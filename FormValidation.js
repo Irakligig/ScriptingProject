@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (email.value.trim() && !emailPattern.test(email.value)) {
       showError(email, "Please enter a valid email address");
       email.classList.add("error-input");
-      isValid = false;
+      isvalid = false;
     }
 
     // Password length
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (password.value.trim() && password.value.length < 8) {
       showError(password, "Password must be at least 8 characters long");
       password.classList.add("error-input");
-      isValid = false;
+      isvalid = false;
     }
 
     // Validate at least 3 technologies checked
@@ -69,11 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (checkedCount < 3) {
       const techGroup = checkboxes[0].closest("fieldset");
       showError(techGroup, "Choose at least 3 technologies", true);
-      isValid = false;
+      isvalid = false;
     }
 
     // If everything is valid, hide form and show game
-    if (isValid) {
+    if (isvalid) {
       document.querySelector(".form-container").style.display = "none";
       document.querySelector(".game-container").style.display = "block";
     }

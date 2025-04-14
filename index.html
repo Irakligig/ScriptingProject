@@ -8,77 +8,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="form-container">
-      <h1>Group Form</h1>
-      <form id="groupform">
-        <div class="form-group-twotoone">
-          <label>
-            First name
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First Name"
-              required
-            />
-          </label>
+    <div id="form-wrapper">
+      <div class="form-container">
+        <h1>Group Form</h1>
+        <form id="groupform">
+          <div class="form-group-twotoone">
+            <label>
+              First name
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First Name"
+                required
+              />
+            </label>
 
-          <label>
-            Last name
-            <input
-              type="text"
-              name="lastname"
-              placeholder="Last Name"
-              required
-            />
-          </label>
-        </div>
-        <div class="form-group">
-          <label>
-            Email
-            <input type="text" name="Email" placeholder="Email" required />
-          </label>
-        </div>
-        <div class="form-group">
-          <label>
-            Password
-            <input
-              type="password"
-              name="Password"
-              placeholder="Password"
-              required
-            />
-          </label>
-        </div>
+            <label>
+              Last name
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Last Name"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              Email
+              <input type="text" name="Email" placeholder="Email" required />
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              Password
+              <input
+                type="password"
+                name="Password"
+                placeholder="Password"
+                required
+              />
+            </label>
+          </div>
 
-        <div class="form-group">
-          <label
-            >Team size
-            <select name="teamsize" id="team-size">
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="form-group">
-          <fieldset>
-            <legend>Technologies</legend>
-            <label><input type="checkbox" name="technologie" />Html</label>
-            <label><input type="checkbox" name="technologie" />Css</label>
+          <div class="form-group">
             <label
-              ><input type="checkbox" name="technologie" />Javascript</label
-            >
-            <label><input type="checkbox" name="technologie" />ReactJs</label>
-            <label><input type="checkbox" name="technologie" />Figma</label>
-            <label><input type="checkbox" name="technologie" />Github</label>
-          </fieldset>
+              >Team size
+              <select name="teamsize" id="team-size">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <legend>Technologies</legend>
+              <label><input type="checkbox" name="technologie" />Html</label>
+              <label><input type="checkbox" name="technologie" />Css</label>
+              <label
+                ><input type="checkbox" name="technologie" />Javascript</label
+              >
+              <label><input type="checkbox" name="technologie" />ReactJs</label>
+              <label><input type="checkbox" name="technologie" />Figma</label>
+              <label><input type="checkbox" name="technologie" />Github</label>
+            </fieldset>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="game-wrapper">
+      <div class="game-container">
+        <h1>Guess the Number!</h1>
+
+        <p>I'm thinking of a number between 1 and 100.</p>
+
+        <div id="output"></div>
+
+        <input type="text" id="userinput" placeholder="Enter your guess" />
+
+        <p style="color: red">Please enter a number between 1 and 100!</p>
+
+        <div>
+          <button class="button">Guess</button>
+          <button class="button">Restart</button>
         </div>
 
-        <button type="submit">Submit</button>
-      </form>
+        <p style="color: darkgreen">Guess History</p>
+
+        <div class="PreviousAttempts">
+          <h2>Guess History</h2>
+          <ul id="history-list"></ul>
+        </div>
+      </div>
     </div>
-    <div class="game-container"></div>
     <script src="FormValidation.js"></script>
+    <script src="NumberGuessingGame.js"></script>
   </body>
 </html>
