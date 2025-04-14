@@ -5,32 +5,30 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
+/**/
 body {
-  height: 100vh;
+  height: 100vh; /*stretch body to whole screen*/
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /*this will put form in the middle*/
   background-color: #f9f6f3;
   color: #333;
   padding: 20px;
 }
 
-/* Form Container */
 .form-container {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
   background: #f9f6f3;
   padding: 2rem;
-  border: 2px solid #e0d6d6;
+  border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Title */
+/*h1 , h2 to left with spacing below for clarity*/
 #groupform h2,
 .form-container h1,
 .form-container h2 {
@@ -38,7 +36,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Two-column layout */
+/*this makes first name + last name on same line */
 .form-group-twotoone {
   display: flex;
   gap: 3rem;
@@ -51,11 +49,11 @@ body {
   flex-direction: column;
 }
 
-/* General group styling */
 .form-group {
   margin-bottom: 1rem;
 }
 
+/*Stacks label text and input vertically with spacing and a readable size.*/
 label {
   display: flex;
   flex-direction: column;
@@ -80,7 +78,7 @@ select:focus {
   outline: none;
 }
 
-/* Technologies (fieldset) */
+/*Removes default fieldset border and spacing*/
 fieldset {
   border: none;
   padding: 0;
@@ -95,24 +93,21 @@ legend {
 .form-group fieldset label {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* spacing between checkbox and text */
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
 
-/* Validation */
 input:invalid {
   border-color: #ff6a6a;
 }
 
-/* Warning text (can be used with JavaScript) */
 .warning-text {
   color: #d9534f;
   font-size: 0.8rem;
   margin-top: 0.25rem;
 }
 
-/* Submit button */
 button[type="submit"] {
   width: 100%;
   background-color: #1e1e1e;
@@ -123,4 +118,24 @@ button[type="submit"] {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  flex-direction: row;
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-column label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
 }
