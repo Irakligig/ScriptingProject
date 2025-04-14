@@ -1,0 +1,124 @@
+#game-wrapper {
+  font-family: "Inter", sans-serif; /* Use Inter font as specified in Figma */
+  background-color: #d3d3d3;
+  min-height: 100vh;
+  width: 100%;
+  display: none;
+
+  /* Initially hiden, toggled by JS */
+}
+
+.game-container {
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100vh;
+  height: 800px;
+  margin: auto;
+}
+
+button#guess-btn,
+button#restart-btn {
+  /* Taken from figma */
+  width: 170px;
+  height: 60px;
+  background-color: rgba(223, 46, 56, 1);
+
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.game-container h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(7, 10, 82, 1);
+}
+
+.game-container > p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.output {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+#userinput {
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 212, 212, 1);
+}
+
+.inputerror {
+  color: rgba(255, 0, 0, 1);
+  font-size: 19px;
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+button#guess-button,
+button#restart-button {
+  /* Taken from figma */
+  width: 170px;
+  height: 60px;
+  background-color: rgba(223, 46, 56, 1);
+
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.side-info {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.side-info > p {
+  font-size: 33px;
+  font-weight: 600;
+  text-align: left;
+  margin: auto;
+}
+
+.PreviousAttempts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history h2 {
+  color: green;
+  font-size: 39px;
+  font-weight: 600;
+}
+
+#history-list li {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#history-list span {
+  color: rgba(0, 94, 255, 1);
+}

@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // If everything is valid, hide form and show game
     if (isvalid) {
       document.querySelector(".form-container").style.display = "none";
-      document.querySelector(".game-container").style.display = "block";
+      document.querySelector("#game-wrapper").style.display = "block";
     }
   });
 });

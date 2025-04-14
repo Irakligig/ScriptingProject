@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MidtermProject</title>
-    <script src="NumberGuessingGame.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Form.css" />
+    <link rel="stylesheet" href="Game.css" />
   </head>
   <body>
     <div id="form-wrapper">
@@ -86,18 +86,27 @@
 
         <p>I'm thinking of a number between 1 and 100.</p>
 
-        <div id="output"></div>
+        <div id="output" class="output"></div>
 
-        <input type="text" id="userinput" placeholder="Enter your guess" />
+        <input
+          type="number"
+          id="userinput"
+          placeholder="Enter your guess"
+          min="1"
+          max="100"
+        />
 
-        <p style="color: red">Please enter a number between 1 and 100!</p>
+        <div id="inputerror" class="inputerror"></div>
 
-        <div>
-          <button class="button">Guess</button>
-          <button class="button">Restart</button>
+        <div class="buttons">
+          <button id="guess-button">Guess</button>
+          <button id="restart-button">Restart</button>
         </div>
 
-        <p style="color: darkgreen">Guess History</p>
+        <div class="side-info">
+          <p><strong>Score:</strong> <span id="score">10</span></p>
+          <p><strong>Attempts:</strong> <span id="attempts">0</span> / 10</p>
+        </div>
 
         <div class="PreviousAttempts">
           <h2>Guess History</h2>
